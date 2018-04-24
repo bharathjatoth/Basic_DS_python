@@ -36,18 +36,18 @@ class Linkedlist:
             temp = temp.next
 if __name__=="__main__":
     ll = Linkedlist()
-    ll.head = Node(1)
-    second = Node(44)
+    ll.head = Node(1)   #creating new node with data and next pointer
+    second = Node(44) 
     third = Node(55)
     ll.head.next = second
     second.next = third
-    ll.printll()
-    ll.insert(3333)
+    ll.printll()   #print linkedlist
+    ll.insert(3333)  
     print("now printing the current version of linked list")
     ll.printll()
     ll.insertend(9999999)
     print("^^^^^^^^^^^")
     ll.printll()
-    ll.insertat(44,88888)
+    ll.insertat(44,88888)  #give the position after which we need to insert the data
     print("(((((((((")
     ll.printll()
